@@ -1,0 +1,76 @@
+body{
+
+  background-color: #F8F8F8;
+}
+
+#header{
+
+  border-color: #F8F8F8;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a:hover{
+
+  color: yellow;
+}
+
+#banner{
+
+  max-width: 100%;
+  height: auto;
+
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+
+hr {
+    display: block;
+    width: 80vw;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: auto;
+    padding: 0;
+}
+
+.img-responsive{
+
+  margin: auto;
+}
+
+.green{
+
+  color:green; font-weight:bold;
+}
+
+a.left.carousel-control, a.right.carousel-control{
+
+   background: none;
+}
+
+
+.glyphicon.glyphicon-chevron-right, .glyphicon.glyphicon-chevron-left{
+
+  color: green;
+}
+
+.carousel-inner{
+
+  width: 80vw;
+  margin: auto;
+}
+
+a:hover{
+
+  color:green;
+}

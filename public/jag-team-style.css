@@ -1,0 +1,38 @@
+@media (max-width: 767px){
+    .jag-team-wrapper{
+        text-align: center;
+    }
+    .jag-team-wrapper li{
+        max-width: 300px;
+    }
+}
+
+.jag-team-wrapper{
+    float: left;
+    width: 100%;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+a {
+    text-decoration: none;
+    transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -webkit-transition: color 0.2s linear;
+}
+.jag-team-wrapper .basic-info.icon {
+    width: 100%;
+}
+.jag-team-wrapper a,
+.jag-team-wrapper a:hover,
+.jag-team-wrapper a:active,
+.jag-team-wrapper a:focus{
+    box-shadow: none !important;
+    outline: none;
+    /*border: 0 !important;*/
+}
+.jag-team-wrapper .member-img-wrap a{
+    display: block;
+}
+.jag-tm-member-desc {
+    margin-bottom: 10px;
+}
