@@ -2,6 +2,9 @@ var express = require('express');
 var nodemailer = require('nodemailer');
 var app = express();
 app.use(express.static('public'));
+app.use(express.static('public/css'));
+app.use(express.static('public/img'));
+app.use(express.static('public/html'));
 
 var bodyParser = require('body-parser')
 app.use( bodyParser.json() );
