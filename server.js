@@ -20,6 +20,7 @@ app.post('/mail', function(req, res){
 	
 	var name = req.body.name;
 	var email = req.body.email;
+    var number = req.body.number;
 	var message = req.body.message;
 
 	var transporter = nodemailer.createTransport({
@@ -34,8 +35,8 @@ app.post('/mail', function(req, res){
     var mailOptions = {
         from: 'theicyreview@gmail.com', // sender address
         to: 'jbiebelberg@gmail.com', // list of receivers
-        subject: 'Email From Website', // Subject line
-        text: (message + "\r\n" + "\r\n" + ' Contact email address is: ' + email + "\r\n" + "\r\n" + 'Message sent from: ' + name) 
+        subject: 'Message From Website', // Subject line
+        text: (message + "\r\n" + "\r\n" + ' Contact email address is: ' + email + "\r\n" + "\r\n" + 'Message sent from: ' + name + "\r\n" + "\r\n" + 'Contact Phone Number is: ' + number) 
     };
 
 

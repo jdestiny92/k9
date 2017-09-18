@@ -74,3 +74,28 @@ a:hover{
 
   color:green;
 }
+
+
+
+ @media (min-width: 600px) { 
+
+      .spacing1{
+
+        margin-top: 35vh;
+      }
+
+      .spacing2{
+
+        margin-top: 15vh;
+      }
+
+       .spacing3{
+
+        margin-top: 40vh;
+      }
+
+      .spacing4{
+
+        margin-top: 10vh;
+      }
+  }

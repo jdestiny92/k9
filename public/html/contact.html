@@ -84,13 +84,11 @@
       </div>
     </div>
     
-    
-    <div class="form-group row">
-      <div class="offset-sm-2 col-sm-10">
-        <button type="submit" class="btn btn-primary" id="submit">Send!</button>
-      </div>
-    </div>
   </form>
+
+  <div class="col-sm-10">
+        <button class="btn btn-primary" id="submit">Send!</button>
+  </div>
 </div>
 
 
@@ -99,6 +97,33 @@
 <script>
   
   $('#submit').on('click', function(){
+
+    
+
+    var message = $('#inputMessage').val();
+    var name = $('#inputName').val();
+    var email = $('#inputEmail').val();
+    var number = $('#inputNumber').val();
+
+   
+
+    $.ajax({
+        type: "POST",
+        //the url where you want to sent the userName and password to
+        url: '/mail',
+        dataType: 'json',
+        async: false,
+        //json object to sent to the authentication url
+        data: {
+          name: name,
+          email: email,
+          message: message,
+          number: number
+        },
+        success: function (data) {
+          console.log(data);
+        }
+    })
 
 
   })
